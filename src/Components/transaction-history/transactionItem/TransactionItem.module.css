@@ -1,0 +1,7 @@
+.line:nth-child(even) {
+    background: white;
+}
+.line{
+    text-align: center
+}
+

@@ -1,0 +1,19 @@
+.transactionSection {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.TransactionHistory {
+    width: 600px;
+    border-radius: 5px;
+    color: #9da5ac;
+}
+
+.tableHeader {
+    background: #00bcd4;
+    color: white;
+    padding: 10px 0;
+    line-height: 40px;
+    text-transform: uppercase;
+}

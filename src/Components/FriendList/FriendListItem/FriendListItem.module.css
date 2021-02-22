@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    align-items: center;
+    width: 251px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.item:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.status {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.trueStatus {
+    composes: status;
+    background: #ff4f56;
+}
+
+.falseStatus {
+    composes: status;
+    background: #54ac56;
+}
+
+.photo {
+    margin: 0 10px 0 0;
+}

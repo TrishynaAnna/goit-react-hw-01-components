@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    width: 251px;
+
+}
+
+.item {
+    opacity: 0.75;
+    width: 70px;
+    padding-bottom: 16px;
+    text-align: center;
+
+}
+
+.span {
+    display: block;
+}
+
+.span:not(:last-child) {
+    margin: 4px;
+}
