@@ -4,7 +4,7 @@ import styles from "./SocialProfile.module.css";
 
 
 const SocialProfile = ({user: {name, tag, location, avatar, stats}}) => {
-    return(
+    return (
         <section className={styles.socialProfileSection}>
             <div className={styles.socialProfile}>
                 <div className={styles.description}>
@@ -33,7 +33,7 @@ const SocialProfile = ({user: {name, tag, location, avatar, stats}}) => {
 };
 
 SocialProfile.propTypes = {
-    user:  PropTypes.shape({
+    user: PropTypes.shape({
         name: PropTypes.string,
         tag: PropTypes.string,
         location: PropTypes.string,
@@ -46,7 +46,6 @@ SocialProfile.propTypes = {
         }),
     }),
 };
-
 
 
 export default SocialProfile;

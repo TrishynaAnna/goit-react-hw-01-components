@@ -3,7 +3,6 @@
     background: white;
     display: flex;
     justify-content: center;
-
 }
 
 .socialProfile {
@@ -34,14 +33,10 @@
 .list {
     display: flex;
     justify-content: space-around;
-    /*padding-right: 20px;*/
     background-color: #f3f6f9;
     margin: 0;
     text-align: center;
-    /*background: #f3f6f9;*/
     list-style: none;
-
-
 }
 
 .item {

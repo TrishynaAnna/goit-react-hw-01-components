@@ -2,32 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './StatisticsList.module.css';
 
+function getColors() {
+    const firstColor = Math.round(Math.random() * 255);
+    const secondColor = Math.round(Math.random() * 255);
+    const thirdColor = Math.round(Math.random() * 255);
+    const randomColor = `rgb(${firstColor}, ${secondColor}, ${thirdColor})`;
 
-const StatisticsList = ({ list }) => {
+    return randomColor;
+}
 
 
-
-    const getColors = () =>
-    {
-        let firstColor = Math.round(Math.random() * 255);
-        firstColor = firstColor < 50 ? firstColor + 50 : firstColor;
-
-        let secondColor = Math.round(Math.random() * 255);
-        secondColor = secondColor < 50 ? secondColor + 50 : secondColor;
-
-        let thirdColor = Math.round(Math.random() * 255);
-        thirdColor = thirdColor < 50 ? thirdColor + 50 : thirdColor;
-
-        return `${firstColor}, ${secondColor}, ${thirdColor}`;
-    };
-
-    return(
+const StatisticsList = ({list}) => {
+    return (
         <ul className={styles.list}>
-         {list.map(item => (
+            {list.map(item => (
                 <li
                     key={item.id}
                     className={styles.item}
-                    style={{ background: `rgb(${getColors()})` }}
+                    style={{backgroundColor: `rgb(${getColors()})`}}
                 >
                     <span className={styles.span}>{item.label}</span>
                     <span className={styles.span}>{item.percentage}%</span>
