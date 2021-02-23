@@ -11,7 +11,6 @@ function getColors() {
     return randomColor;
 }
 
-
 const StatisticsList = ({list}) => {
     return (
         <ul className={styles.list}>
